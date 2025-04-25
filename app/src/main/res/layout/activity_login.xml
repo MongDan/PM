@@ -99,15 +99,6 @@
             android:backgroundTint="@color/blue"
             android:layout_marginTop="16dp" />
 
-        <!-- Lupa Password -->
-        <TextView
-            android:id="@+id/forgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lupa kata sandi Anda?"
-            android:textColor="@color/blue"
-            android:layout_marginTop="12dp"
-            android:gravity="center_horizontal" />
 
         <!-- Daftar Sekarang -->
         <LinearLayout

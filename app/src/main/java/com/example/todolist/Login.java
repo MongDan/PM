@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity {
 
     private TextInputEditText userName, password;
     private Button loginButton;
-    private TextView forgotPasswordText, registerText;
+    private TextView  registerText;
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,16 +34,13 @@ public class Login extends AppCompatActivity {
 
         // Ke halaman register
         registerText.setOnClickListener(view -> navigateToRegister());
-
-        // Tombol lupa password
-        forgotPasswordText.setOnClickListener(view -> showForgotPasswordMessage());
     }
 
     private void initializeViews() {
         userName = findViewById(R.id.userName);
         password = findViewById(R.id.password);
         loginButton = findViewById(R.id.login);
-        forgotPasswordText = findViewById(R.id.forgotPassword);
+
         registerText = findViewById(R.id.logNow);
     }
 
@@ -85,7 +82,4 @@ public class Login extends AppCompatActivity {
         startActivity(new Intent(Login.this, Register.class));
     }
 
-    private void showForgotPasswordMessage() {
-        Toast.makeText(Login.this, "Fitur lupa password belum diimplementasikan", Toast.LENGTH_SHORT).show();
-    }
 }
